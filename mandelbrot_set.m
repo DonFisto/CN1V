@@ -1,5 +1,5 @@
+function mandelbrot_set(n)
 iterations = 100;
-n = 5000;
 x = linspace(-2, 1, n);
 y = linspace(-1.5, 1.5, n);
 [X, Y] = meshgrid(x, y);
@@ -17,4 +17,4 @@ imagesc(x, y, M);
 axis equal off;
 colormap(complex_color_mapping(512));
 colorbar;
-
+end
